@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <style>
+      button.tracking-widest.one::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        translate: -50%;
+        top: 60%;
+        z-index: -10;
+        width: 110%;
+        margin: auto;
+        height: 10px;
+        opacity: 0.3;
+        border-radius: 10px;
+        background-color: yellow;
+      }
+      button.tracking-widest.two::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        translate: -50%;
+        top: 60%;
+        z-index: -10;
+        width: 110%;
+        margin: auto;
+        height: 10px;
+        opacity: 0.3;
+        border-radius: 10px;
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body class="overflow-x-hidden">
+    <section
+      class="bg-[url(images/mobile/image-header.jpg)] bg-cover bg-center bg-no-repeat h-[100vh] w-full md:bg-[url(images/desktop/image-header.jpg)]"
+    >
+      <nav class="flex mx-5 pt-8 justify-between md:mx-10">
+        <img
+          src="images/logo.svg"
+          alt="Sunnyside logo"
+          class="h-fit w-fit self-center"
+        />
+        <div
+          class="flex-col font-medium bg-teal-400 bg-opacity-70 rounded-3xl mt-10 text-white w-full right-0 left-0 z-40 gap-6 absolute hidden items-center lg:bg-transparent lg:flex lg:flex-row lg:space-x-10 lg:mt-0 lg:w-auto lg:gap-0 lg:relative"
+          id="menubar"
+        >
+          <a href="" class="pt-5 duration-300 lg:pt-0 hover:translate-y-[1.5px]"
+            >About</a
+          >
+          <a href="" class="duration-300 hover:translate-y-[1.5px]">Services</a>
+          <a href="" class="duration-300 hover:translate-y-[1.5px]">Projects</a>
+          <a
+            href=""
+            class="bg-white rounded-full text-black mb-8 py-3 px-3 duration-300 uppercase lg:mb-0 hover:bg-opacity-20 hover:text-white hover:translate-y-[1.5px]"
+            style="font-family: Fraunces"
+            >Contact</a
+          >
+        </div>
+        <img
+          src="images/icon-hamburger.svg"
+          alt=""
+          class="h-fit w-fit block lg:hidden"
+          id="menu"
+        />
+      </nav>
+      <div class="mt-36 text-center left-1/2 -translate-x-1/2 absolute">
+        <h1
+          class="font-bold text-white tracking-widest text-5xl uppercase"
+          style="font-family: Fraunces"
+        >
+          We are creatives
+        </h1>
+        <img
+          src="images/icon-arrow-down.svg"
+          alt=""
+          class="mt-56 left-1/2 animate-bounce -translate-x-1/2 absolute"
+        />
+      </div>
+    </section>
+    <section class="">
+      <div class="flex flex-col md:flex-row-reverse">
+        <div class="md:w-1/2">
+          <img
+            src="images/desktop/image-transform.jpg"
+            alt=""
+            class="h-full hidden md:block"
+          />
+          <img
+            src="images/mobile/image-transform.jpg"
+            alt=""
+            class="block md:hidden"
+          />
+        </div>
+        <div class="px-5 md:pl-20 md:w-1/2 xl:mt-32">
+          <h2
+            class="font-bold mx-auto mt-10 text-center mb-5 text-5xl w-10/12 md:mx-0 md:text-left"
+            style="font-family: Fraunces"
+          >
+            Transform your brand
+          </h2>
+          <p
+            class="font-bold mx-auto text-center mb-10 text-[hsl(232_10%_55%)] w-10/12 md:mx-0 md:text-left md:w-10/12"
+          >
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <button
+            class="font-bold mb-8 tracking-widest left-1/2 -translate-x-1/2 one relative uppercase md:mb-5 md:-translate-x-0 md:static"
+            style="font-family: Fraunces"
+          >
+            Learn more
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2">
+          <img
+            src="images/desktop/image-stand-out.jpg"
+            alt=""
+            class="h-full hidden md:block"
+          />
+          <img
+            src="images/mobile/image-stand-out.jpg"
+            alt=""
+            class="block md:hidden"
+          />
+        </div>
+        <div class="px-5 md:pl-20 md:w-1/2 xl:mt-32">
+          <h2
+            class="font-bold mx-auto mt-10 text-center mb-5 text-5xl w-10/12 md:mx-0 md:text-left"
+            style="font-family: Fraunces"
+          >
+            Stand out to the right audience
+          </h2>
+          <p
+            class="font-bold mx-auto text-center mb-10 text-[hsl(232_10%_55%)] w-10/12 md:mx-0 md:text-left md:w-10/12"
+          >
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <button
+            class="font-bold mb-8 tracking-widest left-1/2 -translate-x-1/2 two relative uppercase md:mb-5 md:-translate-x-0 md:static"
+            style="font-family: Fraunces"
+          >
+            Learn more
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="h">
+      <div class="flex flex-col md:flex-row">
+        <div class="relative md:w-1/2">
+          <div class="relative">
+            <img
+              src="images/desktop/image-graphic-design.jpg"
+              alt=""
+              class="hidden md:block"
+            />
+            <img
+              src="images/mobile/image-graphic-design.jpg"
+              alt=""
+              class="block md:hidden"
+            />
+            <div
+              class="text-center w-full bottom-14 left-1/2 text-[hsl(167_40%_24%)] -translate-x-1/2 absolute"
+            >
+              <h2
+                class="font-serif font-bold mb-5 text-3xl"
+                style="font-family: Fraunces"
+              >
+                Graphic design
+              </h2>
+              <p
+                class="font-bold mx-auto w-10/12 md:w-6/12"
+                style="font-family: Barlow"
+              >
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="relative md:w-1/2">
+          <div class="relative">
+            <img
+              src="images/desktop/image-photography.jpg"
+              alt=""
+              class="hidden md:block"
+            />
+            <img
+              src="images/mobile/image-photography.jpg"
+              alt=""
+              class="block md:hidden"
+            />
+            <div
+              class="text-center w-full bottom-14 left-1/2 text-[hsl(198_62%_26%)] -translate-x-1/2 absolute"
+            >
+              <h2
+                class="font-serif font-bold mb-5 text-3xl"
+                style="font-family: Fraunces"
+              >
+                Photography
+              </h2>
+              <p
+                class="font-bold mx-auto w-10/12 md:w-6/12"
+                style="font-family: Barlow"
+              >
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-blue-100 pb-20">
+      <h2
+        class="font-bold text-center text-xl mb-10 tracking-widest opacity-30 pt-16 uppercase md:pt-24 md:pb-20 md:text-2xl"
+        style="font-family: Frauncis"
+      >
+        Client testimonials
+      </h2>
+      <div class="flex flex-col mt-5 gap-7 lg:flex-row">
+        <div class="text-center">
+          <img
+            src="images/image-emily.jpg"
+            alt=""
+            class="rounded-full mx-auto mb-16 w-24 md:w-32"
+          />
+          <p
+            class="font-bold mx-auto text-lg mb-10 w-10/12 md:w-6/12 lg:w-10/12"
+            style="font-family: Barlow"
+          >
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <h4 class="font-extrabold text-xl mb-3" style="font-family: Frauncis">
+            Emily R.
+          </h4>
+          <h5 class="font-bold opacity-60 pb-5" style="font-family: Barlow">
+            Marketing Director
+          </h5>
+        </div>
+        <div class="text-center">
+          <img
+            src="images/image-thomas.jpg"
+            alt=""
+            class="rounded-full mx-auto mb-16 w-24 md:w-32"
+          />
+          <p
+            class="font-bold mx-auto text-lg mb-10 w-10/12 md:w-6/12 lg:w-10/12"
+            style="font-family: Barlow"
+          >
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h4 class="font-extrabold text-xl mb-3" style="font-family: Frauncis">
+            Thomas S.
+          </h4>
+          <h5 class="font-bold opacity-60 pb-5" style="font-family: Barlow">
+            Chief Operating Officer
+          </h5>
+        </div>
+        <div class="text-center">
+          <img
+            src="images/image-jennie.jpg"
+            alt=""
+            class="rounded-full mx-auto mb-16 w-24 md:w-32"
+          />
+          <p
+            class="font-bold mx-auto text-lg mb-10 w-10/12 md:w-6/12 lg:w-10/12"
+            style="font-family: Barlow"
+          >
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <h4 class="font-extrabold text-xl mb-3" style="font-family: Frauncis">
+            Jennie F.
+          </h4>
+          <h5 class="font-bold opacity-60 pb-5" style="font-family: Barlow">
+            Business Owner
+          </h5>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-col md:flex-row">
+        <div class="flex">
+          <div>
+            <img
+              src="images/desktop/image-gallery-milkbottles.jpg"
+              alt=""
+              class="hidden md:block"
+            />
+            <img
+              src="images/mobile/image-gallery-milkbottles.jpg"
+              alt=""
+              class="block md:hidden"
+            />
+          </div>
+          <div>
+            <img
+              src="images/desktop/image-gallery-orange.jpg"
+              alt=""
+              class="hidden md:block"
+            />
+            <img
+              src="images/mobile/image-gallery-orange.jpg"
+              alt=""
+              class="block md:hidden"
+            />
+          </div>
+        </div>
+        <div class="flex">
+          <div>
+            <img
+              src="images/desktop/image-gallery-cone.jpg"
+              alt=""
+              class="hidden md:block"
+            />
+            <img
+              src="images/mobile/image-gallery-cone.jpg"
+              alt=""
+              class="block md:hidden"
+            />
+          </div>
+          <div>
+            <img
+              src="images/desktop/image-gallery-sugarcubes.jpg"
+              alt=""
+              class="hidden md:block"
+            />
+            <img
+              src="images/mobile/image-gallery-sugar-cubes.jpg"
+              alt=""
+              class="block md:hidden"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto bg-[#8ed0c4] text-center footer">
+      <div class="">
+        <img
+          src="images/logo copy.svg"
+          alt=""
+          class="mx-auto mb-8 pt-16 w-40"
+        />
+        <div class="space-x-10 pb-16 text-[hsl(168_34%_41%)] links">
+          <a href="">About</a>
+          <a href="">Services</a>
+          <a href="">Projects</a>
+        </div>
+        <div class="flex mx-auto max-w-[10rem] pb-8 socials justify-between">
+          <img src="images/icon-facebook.svg" alt="" class="h-fit w-fit" />
+          <img src="images/icon-instagram.svg" alt="" class="h-fit w-fit" />
+          <img src="images/icon-twitter.svg" alt="" class="h-fit w-fit" />
+          <img src="images/icon-pinterest.svg" alt="" class="h-fit w-fit" />
+        </div>
+      </div>
+    </section>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
